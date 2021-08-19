@@ -98,7 +98,7 @@ while True:
     ░░░░░░░░████████████████░░░░░░░░
     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░''')
             break
-        c1 -=1
+        c -=1
         print(f"You have {c} attemps")
 
     if count == tr:
