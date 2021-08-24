@@ -58,7 +58,7 @@ with open('text.txt1', 'a') as a:
         if guess == number:
             sec1 = datetime.datetime.now() - sec
             print(f"You win!\n"
-                  f"from {v} attempts :)")
+                  f"{v} attempts from {count} :)")
             a.write(f"You started in: {sec.strftime('%X')} \n")
             a.write(f"You finished in: {datetime.datetime.now().strftime('%X')} \n")
             a.write(f"You found number for {v} attempts\n")
