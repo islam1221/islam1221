@@ -8,7 +8,7 @@ print("instruction:\n"
       "cold +- 25"
       "very cold +-100")
 count = int(input('put your attempts:'))
-v = count
+v = 0
 print("Let's go!\n"
       "Put your number:")
 
