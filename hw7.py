@@ -14,7 +14,7 @@ print("Let's go!\n"
 
 with open('text.txt1', 'a') as a:
     sec = datetime.datetime.now()
-    while 1:
+    while v != count:
         try:
             guess = int(input(''))
         except ValueError:
@@ -57,8 +57,8 @@ with open('text.txt1', 'a') as a:
             break
         if guess == number:
             sec1 = datetime.datetime.now() - sec
-            print(f"You win from {sec1.seconds} time \nThanks for playing my game!\n")
-            print(f"Guessed in {v} attempts!")
+            print(f"You win!\n"
+                  f"from {v} attempts :)")
             a.write(f"You started in: {sec.strftime('%X')} \n")
             a.write(f"You finished in: {datetime.datetime.now().strftime('%X')} \n")
             a.write(f"You found number for {v} attempts\n")
