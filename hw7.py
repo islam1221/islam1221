@@ -65,3 +65,4 @@ with open('text.txt1', 'a') as a:
                     f"Your number was {number}\n"
                   f"In future will be better:)")
             break         
+      print(f"You have only {count}")
