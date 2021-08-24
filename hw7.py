@@ -14,7 +14,7 @@ print("Let's go!\n"
 
 with open('text.txt1', 'a') as a:
     sec = datetime.datetime.now()
-    while count != 0:
+    while 1:
         try:
             guess = int(input(''))
         except ValueError:
