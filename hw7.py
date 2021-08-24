@@ -51,7 +51,6 @@ with open('text.txt1', 'a') as a:
                 "Made by Islamchik04")
             break
         if guess == number:
-            count += 1
             print(f"You win from {count} time \nThanks for playing my game!\n")
             print(f"Guessed in {count} attempts!")
             sec1 = datetime.datetime.now() - sec
