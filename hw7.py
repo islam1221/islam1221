@@ -56,8 +56,8 @@ with open('text.txt1', 'a') as a:
                 "Made by Islamchik04")
             break
         if guess == number:
-            print(f"You win from {count} time \nThanks for playing my game!\n")
-            print(f"Guessed in {count} attempts!")
+            print(f"You win from {v} time \nThanks for playing my game!\n")
+            print(f"Guessed in {v} attempts!")
             sec1 = datetime.datetime.now() - sec
             a.write(f"You started in: {sec.strftime('%X')} \n")
             a.write(f"You finished in: {datetime.datetime.now().strftime('%X')} \n")
