@@ -35,7 +35,7 @@ list = []
 
 def show_all_contact(lst):
     for i in lst[0]:
-        print(i)
+        print(*i.values())
 
 
 def add_number(lst):
