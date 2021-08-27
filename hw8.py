@@ -53,6 +53,7 @@ def add_number(lst):
                   "Please write wrong!")
         else:
             show_all_contact(list)
+            break
 
 
 def edit_name(lst):
@@ -68,6 +69,7 @@ def edit_name(lst):
                       "Please write wrong!")
             else:
                 show_all_contact(list)
+                break
 
 
 def edit_number(lst):
@@ -84,6 +86,7 @@ def edit_number(lst):
                       "Please write wrong!")
             else:
                 show_all_contact(list)
+                break
 
 
 def delete_contact(lst):
@@ -92,6 +95,7 @@ def delete_contact(lst):
     for i in lst:
         if i['name'] == name.title():
             contacts.remove(i)
+            break
 
 
 
@@ -102,6 +106,7 @@ def searching_contact(lst):
         if i['name'] == name.title():
             print(i['name'])
             print(i['phone'])
+            break
 
 
 def choice_contact(lst):
@@ -112,6 +117,7 @@ def choice_contact(lst):
     if l == "2":
         list.append(group_mates)
     show_all_contact(list)
+    break
 
 
 def actions(lst):
