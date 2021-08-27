@@ -40,21 +40,34 @@ def show_all_contact(lst):
 
 def add_number(lst):
     show_all_contact(list)
-    name = input('Enter name: ')
-    phone = input('Enter phone: ')
-    n = dict(name=name.title(), phone=phone)
-    lst.append(n)
-    show_all_contact(list)
+    for i in lst:
+        name = input('Enter name: ')
+        phone = input('Enter phone: ')
+        n = dict(name=name.title(), phone=phone)
+        lst.append(n)
+        if i['phone'] == phone:
+            print("It's number repeat\n"
+                  "Please write wrong!")
+        elif i['name'] == name:
+            print("It's number repeat\n"
+                  "Please write wrong!")
+        else:
+            show_all_contact(list)
 
 
 def edit_name(lst):
     show_all_contact(list)
-    name = input('Enter name for editing:')
     for i in lst:
+        name = input('Enter name for editing:')
         if i['name'] == name.title():
             name = input('Enter name:')
             i['name'] = name.title()
             show_all_contact(list)
+            if i['name'] == name:
+                print("It's number repeat\n"
+                      "Please write wrong!")
+            else:
+                show_all_contact(list)
 
 
 def edit_number(lst):
@@ -66,6 +79,11 @@ def edit_number(lst):
             number = input('Enter number')
             i['phone'] = name.title()
             show_all_contact(list)
+            if i['name'] == name:
+                print("It's number repeat\n"
+                      "Please write wrong!")
+            else:
+                show_all_contact(list)
 
 
 def delete_contact(lst):
@@ -74,7 +92,7 @@ def delete_contact(lst):
     for i in lst:
         if i['name'] == name.title():
             contacts.remove(i)
-    show_all_contact(list)
+
 
 
 def searching_contact(lst):
@@ -122,6 +140,5 @@ def actions(lst):
 
 
 choice_contact(list)
-
 
 actions(list)
