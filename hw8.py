@@ -69,7 +69,8 @@ def edit_name(lst):
                 else:
                     i['name'] = name.title()
                     show_all_contact(list)
-                    break
+            break
+        break
 
 def edit_number(lst):
     show_all_contact(list)
@@ -84,8 +85,8 @@ def edit_number(lst):
                 else:
                     i['phone'] = phone
                     show_all_contact(list)
-                    break
-
+            break
+        break
 
 def delete_contact(lst):
     show_all_contact(list)
@@ -144,3 +145,4 @@ def actions(lst):
 choice_contact(list)
 
 actions(list)
+
