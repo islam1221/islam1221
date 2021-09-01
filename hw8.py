@@ -32,11 +32,7 @@ group_mates = [
 ]
 list = []
 
-def find_conatct(lst):
-    for contact in contacts:
-        if contact['name'] == user_input or contact['phone'] == user_input
-            return contact
-    print("contact don't searched!")
+
 
 
 def show_all_contact(lst):
