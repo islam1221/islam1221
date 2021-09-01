@@ -32,6 +32,12 @@ group_mates = [
 ]
 list = []
 
+def find_conatct(lst):
+    for contact in contacts:
+        if contact['name'] == user_input or contact['phone'] == user_input
+            return contact
+    print("contact don't searched!")
+
 
 def show_all_contact(lst):
     for i in lst[0]:
@@ -40,52 +46,54 @@ def show_all_contact(lst):
 
 def add_number(lst):
     show_all_contact(list)
-    for i in lst:
-        name = input('Enter name: ')
-        phone = input('Enter phone: ')
-        if i['phone'] == phone:
-            print("It's number repeat\n"
-                  "Please write wrong!")
-        if i['name'] == name.title():
-            print("It's number repeat\n"
-                  "Please write wrong!")
-        else:
-            n = dict(name=name.title(), phone=phone)
-            lst.append(n)
-            show_all_contact(list)
+    while 1:
+        for i in lst:
+            name = input('Enter name: ')
+            phone = input('Enter phone: ')
+            if i['phone'] == phone:
+                print("It's number repeat\n"
+                      "Please write correct!")
+            if i['name'] == name.title():
+                print("It's number repeat\n"
+                      "Please write correct!")
+            else:
+                n = dict(name=name.title(), phone=phone)
+                lst.append(n)
+                show_all_contact(list)
+                break
             break
+        break
+
 
 
 def edit_name(lst):
     show_all_contact(list)
-    for i in lst:
-        while 1:
+    while 1:
             name = input('Enter name for editing:')
-            if i['name'] == name.title():
-                name = input('Enter name:')
+            for i in lst:
                 if i['name'] == name.title():
-                    print("It's number repeat\n"
-                          "Please write wrong!")
-                else:
-                    i['name'] = name.title()
-                    show_all_contact(list)
+                    name = input('Enter name:')
+                    if i['name'] == name.title():
+                        print("It's number repeat\n"
+                              "Please write correct!")
+                    else:
+                        i['name'] = name.title()
+                        show_all_contact(list)
             break
-        break
-
 def edit_number(lst):
     show_all_contact(list)
-    for i in lst:
-        while 1:
-            name = input('Enter name for editing:')
+    while 1:
+        name = input('Enter name for editing number:')
+        for i in lst:
             if i['name'] == name.title():
                 phone = input('Enter number:')
                 if i['phone'] == phone:
                     print("It's number repeat\n"
-                          "Please write wrong!")
+                          "Please write correct!")
                 else:
                     i['phone'] = phone
                     show_all_contact(list)
-            break
+
         break
 
 def delete_contact(lst):
@@ -145,4 +153,3 @@ def actions(lst):
 choice_contact(list)
 
 actions(list)
-
